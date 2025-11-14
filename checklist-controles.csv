@@ -1,27 +1,30 @@
-Control,Yes,No
-Least Privilege,No,Yes
-Disaster Recovery Plans,No,Yes
-Password Policies,No,Yes
-Separation of Duties,No,Yes
-Firewall,Yes,No
-Intrusion Detection System (IDS),No,Yes
-Backups,Yes,No
-Antivirus Software,Yes,No
-Manual Monitoring for Legacy Systems,No,Yes
-Encryption,No,Yes
-Password Management System,No,Yes
-Locks (Physical Security),Yes,No
-CCTV Surveillance,Yes,No
-Fire Detection/Prevention,No,Yes
-PCI DSS - Authorized users access card data,No,Yes
-PCI DSS - Card data stored securely,No,Yes
-PCI DSS - Encryption implemented,No,Yes
-PCI DSS - Secure password policies,No,Yes
-GDPR - EU data secured,No,Yes
-GDPR - Breach notification plan (72h),No,Yes
-GDPR - Data classified/inventoried,No,Yes
-GDPR - Privacy policies enforced,No,Yes
-SOC - User access policies established,No,Yes
-SOC - PII/SPII confidential/private,No,Yes
-SOC - Data integrity validated,No,Yes
-SOC - Data available to authorized users,Yes,No
+## Checklist de Controles
+
+| Control | Estado |
+|--------|--------|
+| Least Privilege | ❌ No |
+| Disaster Recovery Plans | ❌ No |
+| Password Policies | ❌ No |
+| Separation of Duties | ❌ No |
+| Firewall | ✔️ Sí |
+| Intrusion Detection System (IDS) | ❌ No |
+| Backups | ✔️ Sí |
+| Antivirus Software | ✔️ Sí |
+| Manual Monitoring for Legacy Systems | ❌ No |
+| Encryption | ❌ No |
+| Password Management System | ❌ No |
+| Locks (Physical Security) | ✔️ Sí |
+| CCTV Surveillance | ✔️ Sí |
+| Fire Detection/Prevention | ❌ No |
+| PCI DSS - Authorized users access card data | ❌ No |
+| PCI DSS - Card data stored securely | ❌ No |
+| PCI DSS - Encryption implemented | ❌ No |
+| PCI DSS - Secure password policies | ❌ No |
+| GDPR - EU data secured | ❌ No |
+| GDPR - Breach notification plan (72h) | ❌ No |
+| GDPR - Data classified/inventoried | ❌ No |
+| GDPR - Privacy policies enforced | ❌ No |
+| SOC - User access policies established | ❌ No |
+| SOC - PII/SPII confidential/private | ❌ No |
+| SOC - Data integrity validated | ❌ No |
+| SOC - Data available to authorized users | ✔️ Sí |
