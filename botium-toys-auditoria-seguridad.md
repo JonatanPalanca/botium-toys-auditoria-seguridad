@@ -50,7 +50,7 @@ Incluye:
 | Terminales POS | Realizan pagos en tienda |
 | Red interna | Comunicación y operaciones |
 | Personal TI | Configuración y seguridad |
-| Información financiera | Datos sensibles |
+| Información financiera | Datos-sensibles |
 
 ---
 

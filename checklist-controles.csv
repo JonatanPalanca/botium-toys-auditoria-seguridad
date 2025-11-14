@@ -1,10 +1,27 @@
-Control,Descripción,Estado
-Firewall,Protección perimetral,No implementado
-MFA,Autenticación multifactor,Pendiente
-Backups,Respaldo diario,Incompleto
-Antivirus,Protección contra malware,Parcial
-Segmentación de red,Separación por zonas,No implementado
-Registros y monitoreo,SIEM o logs,Inexistente
-Políticas de seguridad,Documentación formal,No disponible
-
-
+Control,Yes,No
+Least Privilege,No,Yes
+Disaster Recovery Plans,No,Yes
+Password Policies,No,Yes
+Separation of Duties,No,Yes
+Firewall,Yes,No
+Intrusion Detection System (IDS),No,Yes
+Backups,Yes,No
+Antivirus Software,Yes,No
+Manual Monitoring for Legacy Systems,No,Yes
+Encryption,No,Yes
+Password Management System,No,Yes
+Locks (Physical Security),Yes,No
+CCTV Surveillance,Yes,No
+Fire Detection/Prevention,No,Yes
+PCI DSS - Authorized users access card data,No,Yes
+PCI DSS - Card data stored securely,No,Yes
+PCI DSS - Encryption implemented,No,Yes
+PCI DSS - Secure password policies,No,Yes
+GDPR - EU data secured,No,Yes
+GDPR - Breach notification plan (72h),No,Yes
+GDPR - Data classified/inventoried,No,Yes
+GDPR - Privacy policies enforced,No,Yes
+SOC - User access policies established,No,Yes
+SOC - PII/SPII confidential/private,No,Yes
+SOC - Data integrity validated,No,Yes
+SOC - Data available to authorized users,Yes,No
