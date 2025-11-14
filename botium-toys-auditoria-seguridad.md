@@ -40,17 +40,17 @@ Incluye:
 
 ---
 
-# 4. Activos Críticos Identificados
+### 4. Activos Críticos Identificados
 
-| Activo | Descripción |
-|--------|-------------|
-| Base de datos | Contiene información de clientes, pagos y transacciones |
-| Sitio web / e-commerce | Canal principal de ventas |
-| Servidores | Procesos internos y tienda online |
-| Terminales POS | Realizan pagos en tienda |
-| Red interna | Comunicación y operaciones |
-| Personal TI | Configuración y seguridad |
-| Información financiera | Datos-sensibles |
+| Activo                 | Descripción                                                   |
+|------------------------|---------------------------------------------------------------|
+| Base de datos          | Contiene información de clientes, pagos y transacciones       |
+| Sitio web / e-commerce | Canal principal de ventas                                     |
+| Servidores             | Procesos internos y tienda online                             |
+| Terminales POS         | Realizan pagos en tienda                                      |
+| Red interna            | Comunicación y operaciones                                    |
+| Personal TI            | Configuración y seguridad                                     |
+| Información financiera | Datos sensibles                                                |
 
 ---
 
