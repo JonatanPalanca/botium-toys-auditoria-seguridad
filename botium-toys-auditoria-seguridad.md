@@ -15,6 +15,7 @@ El objetivo de esta auditoría es evaluar el estado actual de seguridad de Botiu
 ---
 
 # 2. Alcance
+
 La auditoría abarca:
 
 - Red interna  
@@ -25,6 +26,7 @@ La auditoría abarca:
 - Servidores y base de datos  
 - Copias de seguridad  
 - Políticas y procedimientos de TI  
+
 
 ---
 
