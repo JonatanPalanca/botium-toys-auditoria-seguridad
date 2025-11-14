@@ -1,10 +1,10 @@
-Control,Descripción,Estado (Sí/No)
-Control de acceso,Políticas y autenticación,Muy débil - NO
-Firewall,Protección perimetral,Parcial - NO
-Gestión de parches,Actualizaciones aplicadas regularmente,NO
-Backups,Disponibilidad y prueba de copias,NO
-Seguridad física,Acceso a servidores y oficinas,NO
-Inventario de activos,Listado completo de hardware/software,SÍ (parcial)
-Registros y monitoreo,Logs centralizados y alertas,NO
-Cumplimiento PCI DSS,Pagos electrónicos,NO
-Cumplimiento GDPR,Protección de datos en UE,NO
+Control,Descripción,Estado
+Firewall,Protección perimetral,No implementado
+MFA,Autenticación multifactor,Pendiente
+Backups,Respaldo diario,Incompleto
+Antivirus,Protección contra malware,Parcial
+Segmentación de red,Separación por zonas,No implementado
+Registros y monitoreo,SIEM o logs,Inexistente
+Políticas de seguridad,Documentación formal,No disponible
+
+

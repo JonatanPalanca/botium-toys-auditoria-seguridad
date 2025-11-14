@@ -1,40 +1,42 @@
 # 🛡️ Auditoría Interna de Seguridad – Botium Toys  
 **Curso: Certificado Profesional Google Ciberseguridad**  
-**Auditoría Interna – NIST CSF**
+**Framework: NIST Cybersecurity Framework (CSF)**
 
 ---
 
 # 1. Introducción  
-Botium Toys es una empresa pequeña dedicada al diseño y venta de juguetes, con presencia física y un e-commerce que crece rápidamente.  
-El departamento de TI solicitó una auditoría interna para:
+El propósito de esta auditoría es evaluar el estado actual de seguridad de **Botium Toys**, una empresa dedicada al diseño y venta de juguetes con operaciones físicas y en línea.  
+El departamento de TI solicitó este análisis para:
 
-- Evaluar el estado actual de seguridad  
-- Identificar vulnerabilidades y riesgos críticos  
-- Prepararse para cumplir regulaciones (PCI DSS, GDPR)  
-- Proteger sus activos tecnológicos  
+- Identificar vulnerabilidades  
+- Evaluar riesgos  
+- Revisar controles existentes  
+- Cumplir estándares (PCI DSS, GDPR)  
 
 ---
 
-# 2. Alcance de la auditoría  
+# 2. Alcance  
+
 Incluye:
 
-- Servidores internos  
-- Sitio web y plataforma de ventas  
+- Red interna  
+- Sitio web y e-commerce  
 - Procesamiento de pagos  
-- Red interna y Wi-Fi  
-- Control de accesos  
-- Políticas de TI  
-- Backups y recuperación  
-- Seguridad física  
+- Gestión de accesos  
+- Servidores y base de datos  
+- Infraestructura física  
+- Backups  
+- Políticas y procedimientos de TI  
 
 ---
 
-# 3. Objetivos  
+# 3. Objetivos de la auditoría  
+
 - Identificar amenazas y vulnerabilidades  
-- Evaluar riesgos  
+- Evaluar riesgos (probabilidad × impacto)  
 - Verificar controles existentes  
-- Comparar con estándares NIST CSF  
-- Emitir recomendaciones  
+- Comparar con NIST CSF  
+- Proponer recomendaciones inmediatas  
 
 ---
 
@@ -42,12 +44,12 @@ Incluye:
 
 | Activo | Descripción |
 |--------|-------------|
-| Base de datos | Información de clientes y transacciones |
-| Sitio web e-commerce | Punto principal de ventas |
+| Base de datos | Contiene información de clientes, pagos y transacciones |
+| Sitio web / e-commerce | Canal principal de ventas |
 | Servidores | Procesos internos y tienda online |
-| Red interna | Comunicación interna |
-| Personal TI | Administración de seguridad |
-| Terminales POS | Procesan pagos |
+| Terminales POS | Realizan pagos en tienda |
+| Red interna | Comunicación y operaciones |
+| Personal TI | Configuración y seguridad |
 | Información financiera | Datos sensibles |
 
 ---
@@ -56,86 +58,86 @@ Incluye:
 
 | Amenaza | Descripción |
 |--------|-------------|
-| Malware | Infección por phishing, descargas o accesos inseguros |
+| Malware | Infecciones por phishing o descargas |
 | Acceso no autorizado | Interno o externo |
 | Ingeniería social | Ataques a empleados |
-| Ataques web | SQL Injection, XSS, CSRF |
-| Fuga de datos | Robo o exposición accidental |
+| Ataques web | SQLi, XSS, CSRF |
+| Fuga de datos | Robo o error humano |
 
 ---
 
 # 6. Vulnerabilidades Detectadas
 
 - No existe política formal de contraseñas  
-- No se aplican parches regularmente  
-- No hay registro centralizado de logs  
-- Backups no documentados  
-- Firewall básico y mal configurado  
-- Falta de monitoreo del sitio web  
-- No existe plan de respuesta a incidentes  
+- No hay monitoreo ni logs centralizados  
+- Backups incompletos o no verificados  
+- Falta de parches de seguridad  
+- Firewall básico sin reglas avanzadas  
+- Falta de IDS/IPS  
+- Permisos excesivos en usuarios  
+- No hay plan de respuesta a incidentes  
 - Seguridad física mínima  
-- Usuarios con permisos innecesarios  
 
 ---
 
-# 7. Evaluación de Riesgos  
-**Método:** Riesgo = Probabilidad × Impacto (1 a 5)
+# 7. Evaluación de Riesgos
 
-| Riesgo | Prob | Impacto | Nivel |
-|--------|------|---------|-------|
-| Robo de datos de clientes | 4 | 5 | 20 (ALTO) |
-| Caída del sitio web | 3 | 5 | 15 (ALTO) |
-| Malware en servidores | 4 | 4 | 16 (ALTO) |
-| Procesamiento inseguro de pagos | 4 | 5 | 20 (ALTO) |
-| Fuga interna de información | 3 | 4 | 12 (MEDIO) |
-| Falta de backups | 3 | 5 | 15 (ALTO) |
+**Fórmula:** Riesgo = Probabilidad (1–5) × Impacto (1–5)
+
+| Riesgo | Prob | Impacto | Nivel | Clasificación |
+|--------|------|---------|--------|---------------|
+| Robo de datos de clientes | 4 | 5 | 20 | ALTO |
+| Caída del sitio web | 3 | 5 | 15 | ALTO |
+| Malware en servidores | 4 | 4 | 16 | ALTO |
+| Procesamiento inseguro de pagos | 4 | 5 | 20 | ALTO |
+| Fuga interna | 3 | 4 | 12 | MEDIO |
+| Falta de backups | 3 | 5 | 15 | ALTO |
 
 ---
 
 # 8. Checklist de Controles (resumen)
+
 - Control de acceso: ❌ No cumple  
 - Firewall: ❌ Parcial  
-- Gestión de parches: ❌ Insuficiente  
+- Gestión de parches: ❌ No aplicada  
 - Backups: ❌ Incompleto  
-- Seguridad física: ❌ Débil  
 - Inventario de activos: ✔ Parcial  
-- Registros y monitoreo: ❌ No implementado  
-- Cumplimiento PCI DSS: ❌ No  
-- Cumplimiento GDPR: ❌ No
+- Registros/Monitoreo: ❌ No implementado  
+- Cumplimiento PCI DSS: ❌ Incompleto  
+- Cumplimiento GDPR: ❌ Parcial  
 
 ---
 
 # 9. Controles recomendados
 
 ## 🔐 Accesos
-- Implementar MFA  
-- Política de contraseñas fuertes  
-- Revisar permisos cada 3 meses  
+- MFA obligatorio  
+- Contraseñas seguras  
+- Revisión periódica de permisos  
 
 ## 🖥️ Infraestructura
-- Actualizaciones automáticas  
-- Hardening de servidores  
-- IDS/IPS recomendado  
+- Parches automáticos  
+- Hardening  
+- Implementar IDS/IPS  
 
 ## 📦 Backups
-- Copias diarias  
-- Pruebas de restauración mensuales  
-- Almacenamiento fuera del sitio  
+- Copias automáticas diarias  
+- Pruebas mensuales  
+- Copias externas cifradas  
 
 ## 🌐 Sitio web
-- WAF (Web Application Firewall)  
-- Escaneo automático de vulnerabilidades  
-- Revisar API y bases de datos  
+- WAF  
+- Escaneos mensuales de vulnerabilidades  
+- Seguridad en API  
 
 ## 🧾 Cumplimiento
-- Documentar políticas  
-- Entrenamiento para empleados (phishing)  
+- Políticas documentadas  
+- Capacitación a empleados  
 - Plan de respuesta a incidentes  
 
 ---
 
 # 10. Riesgo Residual
-Tras implementar controles:
 
 | Riesgo | Antes | Después | Estado |
 |--------|--------|----------|--------|
@@ -146,11 +148,11 @@ Tras implementar controles:
 ---
 
 # 11. Conclusión  
-La empresa presenta **varias vulnerabilidades críticas** que deben corregirse de inmediato.  
-La aplicación de los controles recomendados reducirá significativamente los riesgos operativos, legales y financieros.
+Botium Toys presenta vulnerabilidades críticas que deben tratarse con urgencia.  
+La aplicación de los controles recomendados reducirá significativamente riesgos operativos, legales y financieros.
 
 ---
 
 # 12. Autor  
-**Tu nombre** – Auditoría Interna (Botium Toys)  
+**Jonatan Palanca** – Auditoría Interna (Botium Toys)  
 Curso: Google Cybersecurity Professional Certificate
